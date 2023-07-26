@@ -40,8 +40,7 @@
         theme: {
           extend: {
             backgroundImage: {
-              'hero-pattern': "url('/img/hero-pattern.svg')",
-              'footer-texture': "url('/img/footer-texture.png')",
+              
             }
           }
         }
@@ -53,11 +52,11 @@
     <!-- Header Start -->
     <header class="container mx-auto">
         <!-- Navbar Section -->
-        <div class="navbar bg-[#F85559] text-white px-8 py-5 rounded-full"> 
+        <div class="navbar lg:bg-[#F85559] bg-[#FFF] text-white px-8 py-5 rounded-full"> 
             <div class="">
               <div class="dropdown absolute left-48 md:left-[515px]">
                 <label tabindex="0" class="btn btn-ghost lg:hidden flex justify-between relative left-40">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#F85559] lg:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 bg-[#F85559]"">
                   <li><a class="hover:text-white">Home</a></li>
@@ -78,7 +77,7 @@
             </div>
             <div class="flex Items-center gap-2 navbar-center">
                 <img src="./images/logo.png" alt="">
-                <h2 class="text-4xl font-bold">FruitBurst</h2>
+                <h2 class="text-4xl font-bold text-black lg:text-white">FruitBurst</h2>
             </div>
             <div class="navbar-end p-2">
                 <div class="bg-white pl-8 rounded-full hidden lg:flex justify-between items-center">
@@ -107,7 +106,7 @@
                         Exotic tastes at your<br>doorstep
                       </h2>
                       <p>We supply highly quality organic products</p>
-                      <button class="btn bg-[#F85559] border-0 text-white">Shop Now</button>
+                      <button class="btn bg-[#F85559] border-0 text-white hover:text-black">Shop Now</button>
                     </div>
                       <a href="#slide2" class="btn btn-circle">❯</a>  
                   </div>
@@ -124,7 +123,7 @@
                         Best Fruits in you<br>doorstep
                       </h2>
                       <p>We supply highly quality organic products</p>
-                      <button class="btn bg-[#F85559] border-0 text-white">Shop Now</button>
+                      <button class="btn bg-[#F85559] border-0 text-white hover:text-black">Shop Now</button>
                     </div>
                     <a href="#slide3" class="btn btn-circle">❯</a>  
                   </div>
@@ -140,7 +139,7 @@
                         Seasonal Fruits in your<br>doorstep
                       </h2>
                       <p>We supply highly quality organic products</p>
-                      <button class="btn bg-[#F85559] border-0 text-white">Shop Now</button>
+                      <button class="btn bg-[#F85559] border-0 text-white hover:text-black">Shop Now</button>
                     </div>
                       <a href="#slide4" class="btn btn-circle">❯</a>  
                   </div>
@@ -156,18 +155,77 @@
                         Exotic Fruits at your<br>doorstep
                       </h2>
                       <p>We supply highly quality organic products</p>
-                      <button class="btn bg-[#F85559] border-0 text-white">Shop Now</button>
+                      <button class="btn bg-[#F85559] border-0 text-white hover:text-black">Shop Now</button>
                     </div>
                       <a href="#slide1" class="btn btn-circle">❯</a>  
                   </div>
                 </div> 
             </div>
         </div>
-        // Footer end
-        // Fruits Section
-        <section>
-            
+        
+        <section class="z-0 relative">
+          <!-- Fruits Section Start -->
+          <div class="container mx-auto -mt-28 z-10 lg:flex justify-center hidden">
+              <div class="flex items-center bg-white justify-around gap-14 px-6 py-6 shadow-xl ml-32 mr-32 rounded-lg">
+                <div class="flex flex-col items-center p-5">
+                  <img src="./images/fruit1.png" alt=""> 
+                  <h3>Strawberry</h3> 
+                </div>
+                <div class="flex flex-col items-center">
+                  <img src="./images/fruit2.png" alt=""> 
+                  <h3>Orange</h3> 
+                </div>
+                <div class="flex flex-col items-center">
+                  <img src="./images/fruit3.png" alt=""> 
+                  <h3>Mango</h3> 
+                </div>
+                <div class="flex flex-col items-center">
+                  <img src="./images/fruit4.png" alt=""> 
+                  <h3>Strawberry</h3> 
+                </div>
+                <div class="flex flex-col items-center">
+                  <img src="./images/fruit5.png" alt=""> 
+                  <h3>Mango</h3> 
+                </div>  
+              </div>
+          </div>
         </section>
+        <!-- Deals of The Day Section -->
+        <section class="container mx-auto lg:px-10 my-20 flex lg:flex-row flex-col justify-between items-center">
+          <div class="space-y-6 lg:px-0 px-10">
+              <h2 class="lg:text-6xl text-4xl font-bold lg:text-left text-center">Deal of the day</h2>
+              <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>  
+          <div class="lg:my-0 my-10">
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+              <div class="flex flex-col p-2 bg-[#F85559] rounded-box text-white">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:15;"></span>
+                </span>
+                days
+              </div> 
+              <div class="flex flex-col p-2 bg-[#F85559] rounded-box text-white">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:10;"></span>
+                </span>
+                hours
+              </div> 
+              <div class="flex flex-col p-2 bg-[#F85559] rounded-box text-white">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:24;"></span>
+                </span>
+                min
+              </div> 
+              <div class="flex flex-col p-2 bg-[#F85559] rounded-box text-white">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:49;"></span>
+                </span>
+                sec
+              </div>
+            </div>  
+          </div>
+        </section>
+        <!-- Fruits Review Section -->
     </main>
     <!-- Footer Start -->
     <footer>
